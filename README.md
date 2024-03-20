@@ -44,7 +44,7 @@ This sample includes the following features:
 
 There are three approaches shown in the code for credential free deployment of Azure resources from Azure DevOps.
 
-The preferred method is to use OIDC with a User Assigned Managed Identity since this does not require elevated permissions in Azure Active Directory and has a longer token timeout than an App Registration. However the code also shows the Service Principal approach for those that prefer that method. If you choose the Service Principal approach then the account creating the infrastructure will need permission to create Applications in Azure Active Directory.
+The preferred method is to use OIDC with a User Assigned Managed Identity since this does not require elevated permissions in Microsoft Entra ID and has a longer token timeout than an App Registration. However the code also shows the Service Principal approach for those that prefer that method. If you choose the Service Principal approach then the account creating the infrastructure will need permission to create Applications in Microsoft Entra ID.
 
 The default option is `oidc-with-user-assigned-managed-identity`.
 
@@ -168,7 +168,7 @@ When deploying the example you will have selected to use the default Managed Ide
 ##### Option 3 Only: Service Principal
 
 1. Login to the [Azure Portal](https://portal.azure.com) with your Global Administrator account.
-1. Navigate to `Azure Active Directory` and select `App registrations`.
+1. Navigate to `Microsoft Entra ID` and select `App registrations`.
 1. Select `All applications`, then find the one you just created post-fixed with `dev` (e.g. `JFH-20221208-dev`).
 1. Select `Certificate & secrets`, then `Federated credentials`.
 1. There should only be one credential in the list, select that and take a look at the configuration.
