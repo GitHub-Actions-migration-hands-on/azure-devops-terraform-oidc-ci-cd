@@ -27,7 +27,7 @@ variable "azure_devops_project_target" {
 
 variable "github_organisation_template" {
   type    = string
-  default = "Azure-Samples"
+  default = "GitHub-Actions-migration-hands-on"
 }
 
 variable "github_repository_template" {
